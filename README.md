@@ -13,7 +13,7 @@ This Chrome Extension uses Roberta (a transformer-based language model) and Tens
 
 1. **Clone the repository** to your local machine:
     ```bash
-    git clone https://github.com/justushar/phishing-detection-extension.git
+    git clone https://github.com/justushar/Phising-Detector.git
     ```
 
 2. **Open Chrome** and go to the `chrome://extensions/` page.
