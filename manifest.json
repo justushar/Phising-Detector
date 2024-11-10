@@ -5,7 +5,7 @@
     "version": "1.1",
     "author": "Tushar Bhatia",
 
-    "description": "A minimal extension which demonstrates how to create a extension with Gmail.JS and NodeJS-based bundling.",
+    "description": "The Phishing Detector extension aims to detect phishing emails using Roberta model trained on multiple datasets to ensure correct predictions.",
 
     "content_scripts": [
         {
