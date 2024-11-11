@@ -37,7 +37,7 @@ async function startExtension(gmail) {
                 const emailBody = emailData.content_html;
 
                 const isSpam = await checkSpamInChunks(emailSubject + " " + emailBody, tokenizer, model);
-                console.log(isSpam ? "Spam" : "Not Spam");
+                // console.log(isSpam ? "Spam" : "Not Spam");
                 showNotification(isSpam);
             });
         });
