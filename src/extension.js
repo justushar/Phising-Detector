@@ -18,17 +18,17 @@ const policy = window.trustedTypes.createPolicy("myExtensionPolicy", {
 });
 
 async function startExtension(gmail) {
-    console.log("Extension loading...");
+    //console.log("Extension loading...");
     try {
         const tokenizer = await loadTokenizer();
         const model = await loadTFJSModel();
 
-        console.log("Extension loaded successfully.");
+       // console.log("Extension loaded successfully.");
         window.gmail = gmail;
 
         gmail.observe.on("load", () => {
             const userEmail = gmail.get.user_email();
-            console.log("Hello, " + userEmail + ". This is your extension talking!");
+        //    console.log("Hello, " + userEmail + ". This is your extension talking!");
 
             gmail.observe.on("view_email", async (domEmail) => {
                 console.log("Looking at email:", domEmail);
@@ -103,7 +103,7 @@ async function checkSpamInChunks(text, tokenizer, model) {
 
     // Average spam score across chunks and classify as spam if above threshold
     const avgSpamScore = spamScoreSum / chunkCount;
-    console.log("Average spam score:", avgSpamScore);
+ //   console.log("Average spam score:", avgSpamScore);
     if (avgSpamScore > 2.77) return "Spam";
     else return "Not Spam";
 }

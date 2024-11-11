@@ -7,6 +7,19 @@
 
     "description": "The Phishing Detector extension aims to detect phishing emails using Roberta model trained on multiple datasets to ensure correct predictions.",
 
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      },
+      "action": {
+        "default_icon": {
+          "16": "icon.png",
+          "48": "icon.png",
+          "128": "icon.png"
+        }
+      },
+
     "content_scripts": [
         {
             "matches": [ "*://mail.google.com/*" ],
