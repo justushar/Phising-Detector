@@ -39,7 +39,6 @@ This Chrome Extension uses Roberta (a transformer-based language model) and Tens
 - **TensorFlow.js:** A library for running machine learning models directly in the browser.
 - **Roberta:** A transformer-based model fine-tuned for text classification tasks, used for detecting phishing and spam emails.
 - **Chrome Extension API:** For interacting with Gmail and injecting functionality directly into the browser.
-- **Gmail API:** For accessing and reading the user's emails securely.
 
 ## Usage
 
@@ -59,8 +58,7 @@ We welcome contributions! If you would like to contribute to the development of 
 1. Fork the repository.
 2. Create a new branch for your feature or fix.
 3. Implement your changes.
-4. Ensure all tests are passing and the extension works correctly.
-5. Submit a pull request with a clear description of your changes.
+4. Submit a pull request with a clear description of your changes.
 
 ## License
 
